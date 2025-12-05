@@ -10,9 +10,8 @@ In our exercise sessions, we have been using Python and Qiskit to explore quantu
 
 2. Implement and compare the HHL algorithm and the VQLS algorithm to solve a specific linear equation. The HHL algorithm is one we have studied in class, and I will also implement the VQLS algorithm as described in reference [1].
 
-3. Consider the linear finite element method (FEM) equation AX=b, and compare the results obtained from classical algorithms and quantum algorithms.
-
-This project aims to explore the integration of quantum computing with classical high-performance computing, focusing on solving linear equations using quantum algorithms and comparing their performance with classical methods. For background information, an introduction and overview of the development of quantum algorithms can be found in reference [2], while a detailed description of the VQLS algorithm is provided in reference [1].Additionally, for the parallel computing aspects, the XACC framework is discussed in reference [4], and a comprehensive description of hybrid HPCQC approaches can be found in reference [3][5][6].
+This project aims to explore the full integration of quantum computing with classical HPC (High-Performance Computing). The scope includes leveraging the XACC framework to orchestrate heterogeneous workflows, integrating quantum hardware/simulators into classical computation pipelines, and conducting low-level benchmarking and compilation to optimize execution. The expected results will offer new perspectives for guiding future development strategies for quantum-classical integration.
+For background information, an introduction and overview of the development of quantum algorithms can be found in reference [2], while a detailed description of the VQLS algorithm is provided in reference [1].Additionally, for the parallel computing aspects, the XACC framework is discussed in reference [4], and a comprehensive description of hybrid HPCQC approaches can be found in reference [3][5][6].
 
 
 
