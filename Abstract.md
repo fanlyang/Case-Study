@@ -13,8 +13,8 @@ In this project,we will use:
 
 By combining hybrid quantum computing and AI-based surrogate modeling, this project aims to:
 
-1.Explore and establish the potential advantages of next-generation computing models.
+1. Explore and establish the potential advantages of next-generation computing models.
 
-2.Achieve significant acceleration in computational workflows for large-scale problems.
+2. Achieve significant acceleration in computational workflows for large-scale problems.
 
-3.Provide a foundation for future research in HPC, quantum computing, and AI-enhanced simulations, bridging classical and emerging computational paradigms.
+3. Provide a foundation for future research in HPC, quantum computing, and AI-enhanced simulations, bridging classical and emerging computational paradigms.
