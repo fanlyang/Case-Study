@@ -1,20 +1,11 @@
 # Toward Unified Acceleration in Classical, Quantum, and AI Computation
 
-The pursuit of computational efficiency is relentless. We constantly aim to compute faster and more accurately. However, 
-traditional computing approaches are approaching the limits imposed by Moore’s law. Modern scientific and engineering problems 
-often involve extremely large-scale simulations or complex computations, which can be prohibitively time-consuming.
-This raises the question: how can we achieve further acceleration beyond classical methods?
+Traditional computing power is approaching its limits, making large-scale scientific simulations and complex engineering computations increasingly challenging.To overcome current computational bottlenecks, next-generation paradigms are essential.
 
-In this project,we will use:
+This project proposes an integrated approach to accelerate computational workflows using two complementary technologies:
 
-1. Hybrid Classical-Quantum Computing: Utilize quantum algorithms within the XACC framework to establish a practical hybrid workflow. Although small problems may not show speedup, the implementation itself is a tangible achievement and provides a foundation for future scalability.
+Hybrid Classical-Quantum Computing: Implement quantum algorithms within the XACC framework to build a practical hybrid workflow. While immediate speedups may be modest, this effort establishes a robust foundation for scalable quantum-accelerated applications.
 
-2. AI-based Surrogate Modeling: Train AI models to approximate outputs of highly complex and time-consuming simulations. Once trained, these surrogate models can deliver near-instantaneous solutions.
+AI-based Surrogate Modeling: Train AI models to approximate outputs of computationally intensive simulations, enabling near-instantaneous predictions and drastically reducing classical computational demands.
 
-By combining hybrid quantum computing and AI-based surrogate modeling, this project aims to:
-
-1. Explore and establish the potential advantages of next-generation computing models.
-
-2. Achieve significant acceleration in computational workflows for large-scale problems.
-
-3. Provide a foundation for future research in HPC, quantum computing, and AI-enhanced simulations, bridging classical and emerging computational paradigms.
+By combining these approaches, the project aims to:Bridge Classical and Emerging Paradigms: Connect and leverage existing HPC, quantum computing, and AI-driven simulation frameworks to explore the feasibility of future integration.
