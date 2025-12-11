@@ -1,4 +1,4 @@
-# Toward Unified Acceleration in Classical, Quantum, and AI Computation
+# Toward hybrid Acceleration in Classical, Quantum, and AI Computation
 
 The approaching limits of classical computing are rendering large-scale scientific simulations and complex engineering computations prohibitively time-consuming. To overcome current computational bottlenecks, next-generation paradigms are essential.
 
