@@ -1,0 +1,1 @@
+docker run --security-opt seccomp=unconfined --init -it -p 3000:3000 -v C:\Users\yangfawp\Documents\casestudy:/home/dev/casestudy xacc/xacc
