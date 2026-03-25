@@ -1,0 +1,49 @@
+#pragma once
+#include <xacc.hpp>
+#include <xacc_service.hpp>
+#include <memory>
+#include <cmath>
+#include <string>
+
+namespace hhl {
+
+std::shared_ptr<xacc::CompositeInstruction> createQFT(int n) {
+  auto provider = xacc::getIRProvider("quantum");
+  auto qft = provider->createComposite("qft_" + std::to_string(n));
+
+  for (int k = 0; k < n; ++k) {
+    qft->addInstruction(provider->createInstruction("H", {static_cast<std::size_t>(k)}));
+    for (int j = k + 1; j < n; ++j) {
+      double theta = M_PI / std::pow(2.0, j - k);
+      qft->addInstruction(provider->createInstruction("CPhase",
+        {static_cast<std::size_t>(j), static_cast<std::size_t>(k)}, {theta}));
+    }
+  }
+  for (int i = 0; i < n / 2; ++i) {
+    qft->addInstruction(provider->createInstruction("Swap",
+      {static_cast<std::size_t>(i), static_cast<std::size_t>(n - 1 - i)}));
+  }
+  return qft;
+}
+
+std::shared_ptr<xacc::CompositeInstruction> createIQFT(int n) {
+  auto provider = xacc::getIRProvider("quantum");
+  auto iqft = provider->createComposite("iqft_" + std::to_string(n));
+
+  for (int i = 0; i < n / 2; ++i) {
+    iqft->addInstruction(provider->createInstruction("Swap",
+      {static_cast<std::size_t>(i), static_cast<std::size_t>(n - 1 - i)}));
+  }
+
+  for (int k = n - 1; k >= 0; --k) {
+    for (int j = n - 1; j > k; --j) {
+      double theta = -M_PI / std::pow(2.0, j - k);
+      iqft->addInstruction(provider->createInstruction("CPhase",
+        {static_cast<std::size_t>(j), static_cast<std::size_t>(k)}, {theta}));
+    }
+    iqft->addInstruction(provider->createInstruction("H", {static_cast<std::size_t>(k)}));
+  }
+  return iqft;
+}
+
+} // namespace hhl
