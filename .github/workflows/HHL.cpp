@@ -1,9 +1,12 @@
-#include "hhl/HHL.hpp"
-#include "hhl/QPE.hpp"
-#include "hhl/CircuitUtils.hpp"
-#include <xacc_service.hpp>
+#include "HHL.hpp"
+#include "QPE.hpp"
+#include "CircuitUtils.hpp"
+#include "xacc.hpp"
+#include "xacc_service.hpp"
 
 namespace hhl {
+
+// we must know qubits in | eigenvalue register | system register(bPrep) | ancilla | to allocate and map
 
 std::shared_ptr<xacc::CompositeInstruction>
 createHHL(const std::string& name,
@@ -18,7 +21,7 @@ createHHL(const std::string& name,
   // 1. Prepare |b>
   if (bPrep) {
     for (auto& inst : bPrep->getInstructions()) {
-      hhl->addInstruction(inst);
+      hhl->addInstruction(inst);  // adds the gate into the main HHL circuit
     }
   }
 

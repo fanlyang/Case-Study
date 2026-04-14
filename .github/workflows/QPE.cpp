@@ -1,6 +1,6 @@
-#include "hhl/QPE.hpp"
-#include "hhl/QFT.hpp"
-#include "hhl/CircuitUtils.hpp"
+#include "QPE.hpp"
+#include "QFT.hpp"
+#include "CircuitUtils.hpp"
 #include <xacc_service.hpp>
 
 namespace hhl {
